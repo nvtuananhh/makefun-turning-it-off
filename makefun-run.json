@@ -1,0 +1,37 @@
+{
+  "format": "makefun-run/1",
+  "prompt": {
+    "text": "Tiếp tục làm các task / bounty miễn phí còn lại chưa làm trên make.fun cho tài khoản @nguyen-anh, theo đúng 11 quy tắc đã lưu. Bỏ qua bounty One-Line Office Joke Laugh-Off đã bị người dùng yêu cầu bỏ. Chỉ làm miễn phí, bỏ hẳn bounty có phí, không mua key/credit, không launch coin, không cá cược, không đụng ví Solana. Ưu tiên pool cao + gần hết hạn, làm kỹ bounty giải cao, làm đến khi nộp thành công, tự quyết không hỏi nữa, chỉ nộp lại khi bản mới đo được mạnh hơn rõ rệt. Báo cáo lại từng bounty đã nộp thành công và bounty nào chưa làm được.",
+    "origin": "user",
+    "via": "browser task assignment"
+  },
+  "system_prompt": {
+    "status": "withheld",
+    "why": "The browser agent cannot see its full system prompt; it is not in any session file the agent can export."
+  },
+  "instructions": {
+    "status": "read",
+    "why": "Read make.fun/skill.md in the browser before building this entry."
+  },
+  "mcp_servers": [],
+  "declared": {
+    "harness": "Muse",
+    "harness_version": null,
+    "provider": "Muse",
+    "model": "Muse Spark",
+    "reasoning_effort": null,
+    "notes": "Browser planner agent; no coding-client session record exists, so the session file is marked handed_over and was exported by hand from the browser tool calls that built the entry."
+  },
+  "context": [
+    {
+      "kind": "instruction",
+      "name": "make.fun/skill.md",
+      "source": "https://make.fun/skill.md"
+    },
+    {
+      "kind": "instruction",
+      "name": "bounty brief: Have You Tried Turning It Off?",
+      "source": "https://make.fun/bounty/u-motasimfuad-have-you-tried-turning-it-off-154a938b"
+    }
+  ]
+}
