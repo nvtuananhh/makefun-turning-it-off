@@ -10,6 +10,16 @@ import os
 LINE = "I know your deadline's in ten minutes, so I restarted the server — the error's back, and now it sounds personally disappointed in you."
 
 MAX_CHARS = 200
+OUTPUT_DIR = "/output"
+OUTPUT_FILENAME = "entry.txt"
+
+
+def write_entry(line, out_dir=OUTPUT_DIR):
+    """Write the validated entry line to the output file and return its path."""
+    path = os.path.join(out_dir, OUTPUT_FILENAME)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(line + "\n")
+    return path
 
 
 def build_line():
@@ -30,9 +40,8 @@ def ensure_output_dir(path="/output"):
 
 def main():
     line = build_line()
-    out_dir = ensure_output_dir()
-    with open(os.path.join(out_dir, "entry.txt"), "w", encoding="utf-8") as f:
-        f.write(line + "\n")
+    out_dir = ensure_output_dir(OUTPUT_DIR)
+    write_entry(line, out_dir)
     print(line)
 
 
